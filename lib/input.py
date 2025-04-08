@@ -54,6 +54,5 @@ def get_params():
     ), recursive=True)
 
     print(f"\nFound {len(filenames)} {config['ext']} files in {config['dir']}.")
-    input("Press enter to continue or Ctrl+C to cancel.")
 
     return config["uselocaldiff"], config['location'], filenames

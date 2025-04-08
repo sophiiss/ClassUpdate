@@ -29,9 +29,6 @@ def get_config(config_filename):
     raw_config.read(config_filename)
 
     profile = "DEFAULT"
-    if input(f"Use {q(profile)} profile? [Y/n]\t").lower() == "n":
-        profile = input("Config profile name:\t\t")
-        profile = try_user(raw_config, profile)
 
     config_user = raw_config[profile]
     config = {
